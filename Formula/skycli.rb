@@ -5,21 +5,21 @@
 class Skycli < Formula
   desc "Unofficial CLI for the Skylight Calendar private API"
   homepage "https://github.com/jwmoss/skycli"
-  version "0.1.3"
+  version "0.1.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jwmoss/skycli/releases/download/v0.1.3/skycli_0.1.3_darwin_amd64.tar.gz"
-      sha256 "58178be71c2e3fe111a44f3453d426f65d84b1dc31b7f18298587e10d010e29c"
+      url "https://github.com/jwmoss/skycli/releases/download/v0.1.4/skycli_0.1.4_darwin_amd64.tar.gz"
+      sha256 "47becb738db8d7e797324240a3fedbe6d889bc933a5eae380aa1bcce3194f723"
 
       define_method(:install) do
         bin.install "skycli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jwmoss/skycli/releases/download/v0.1.3/skycli_0.1.3_darwin_arm64.tar.gz"
-      sha256 "b08d32831dc698fd2506de1efd2d3e030093d5fb7ae76a4a803590bdcb47987d"
+      url "https://github.com/jwmoss/skycli/releases/download/v0.1.4/skycli_0.1.4_darwin_arm64.tar.gz"
+      sha256 "220ff3ac61fd3d12e575abb334ec1dfbe8ed5377c5d9e02aae0d6206922aeeae"
 
       define_method(:install) do
         bin.install "skycli"
@@ -29,15 +29,15 @@ class Skycli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jwmoss/skycli/releases/download/v0.1.3/skycli_0.1.3_linux_amd64.tar.gz"
-      sha256 "d989ef1fa30a98574b72dfaca8a8e2403ffcf98edf17c57ee0a3efb901d797b2"
+      url "https://github.com/jwmoss/skycli/releases/download/v0.1.4/skycli_0.1.4_linux_amd64.tar.gz"
+      sha256 "faecd216d7161696a2f20084ffa54192826d2f2698b64a6c067a50b337511cef"
       define_method(:install) do
         bin.install "skycli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jwmoss/skycli/releases/download/v0.1.3/skycli_0.1.3_linux_arm64.tar.gz"
-      sha256 "c88118f25108db743149333ae876539455e5a05872423ddde697334b5e149d85"
+      url "https://github.com/jwmoss/skycli/releases/download/v0.1.4/skycli_0.1.4_linux_arm64.tar.gz"
+      sha256 "840ccb5d2a56a36bcec6bf2c52f5ffcfca48a5e19eea4efa26dc3f2b93296226"
       define_method(:install) do
         bin.install "skycli"
       end

@@ -5,21 +5,21 @@
 class Goveetl < Formula
   desc "Command-line client for Govee cloud, app, and LAN APIs"
   homepage "https://github.com/jwmoss/goveetl"
-  version "1.0.1"
+  version "1.1.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jwmoss/goveetl/releases/download/v1.0.1/goveetl_1.0.1_darwin_amd64.tar.gz"
-      sha256 "46ecd0d7ebb28c4f3dc87594919b2aef14ac4878404f79a05dc8fcbd956b6c20"
+      url "https://github.com/jwmoss/goveetl/releases/download/v1.1.0/goveetl_1.1.0_darwin_amd64.tar.gz"
+      sha256 "920782ddafd3b89715e4b16aa702b4973554d3d308ae95b4423ad74a865ba150"
 
       define_method(:install) do
         bin.install "goveetl"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/jwmoss/goveetl/releases/download/v1.0.1/goveetl_1.0.1_darwin_arm64.tar.gz"
-      sha256 "bad24eda98bc396bb1573726284b3bb43922ec10bcfcaa2cc9146aa17d759a20"
+      url "https://github.com/jwmoss/goveetl/releases/download/v1.1.0/goveetl_1.1.0_darwin_arm64.tar.gz"
+      sha256 "e61e604ba7551160ef4ab16c341aa86ef15ebd90d2484f9d953b4e8fb3e97862"
 
       define_method(:install) do
         bin.install "goveetl"
@@ -29,15 +29,15 @@ class Goveetl < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jwmoss/goveetl/releases/download/v1.0.1/goveetl_1.0.1_linux_amd64.tar.gz"
-      sha256 "ebd2b8b820ddf7ccb5e1d616d7af962ae56880c76e036491863ce4b7722852e9"
+      url "https://github.com/jwmoss/goveetl/releases/download/v1.1.0/goveetl_1.1.0_linux_amd64.tar.gz"
+      sha256 "82c1fff3a4119c3e98bcedeaedaba1bda3740e2e77dcdaa163dc9da29afc9790"
       define_method(:install) do
         bin.install "goveetl"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jwmoss/goveetl/releases/download/v1.0.1/goveetl_1.0.1_linux_arm64.tar.gz"
-      sha256 "3f22209f3e6a6cf2e9f3081114409a1f482936056d78414bcdc5e7b8d9964401"
+      url "https://github.com/jwmoss/goveetl/releases/download/v1.1.0/goveetl_1.1.0_linux_arm64.tar.gz"
+      sha256 "1f5afb0de9c131e2b7f7845881742fbda066afa16ba48becfcd51b02b503df08"
       define_method(:install) do
         bin.install "goveetl"
       end

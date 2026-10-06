@@ -1,30 +1,30 @@
 cask "edcctl" do
-  version "0.1.1"
+  version "0.2.0"
 
   on_macos do
     on_intel do
-      sha256 "1a096e84607e56d24836645afaa569afb815aaa1ae02ef7370909e74afdece81"
+      sha256 "d2c37120b82fd1d4193a6dd3cba39861b8af4a61dea79b5b8caba9db515ed357"
       url "https://github.com/jwmoss/edcctl/releases/download/v#{version}/edcctl_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "8f466bfb2a9a27b6ad0f900e1f5d7a7e6ecda6c552a2f41b5763254fab05a1ee"
+      sha256 "4ace4e42330590e6f1927888f8b866761878e2bf8deb31c2dc2344e11efb8679"
       url "https://github.com/jwmoss/edcctl/releases/download/v#{version}/edcctl_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "b78ea15ad77db2b7f93089f75095f5c0a32a54df4f301ed248f87549fb31a71a"
+      sha256 "48ce88cec2007ac1f3ef8f84e775fefa1cf6091da1f545e866e976cc3013d8ad"
       url "https://github.com/jwmoss/edcctl/releases/download/v#{version}/edcctl_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "79b11c685924af299c184664ac3aabf66cdec759a9a81d341c266076959c0099"
+      sha256 "cef95c4893749c6886486d9fdd1b46d65e2dcc0c97ab4fb009e54fe52903e246"
       url "https://github.com/jwmoss/edcctl/releases/download/v#{version}/edcctl_#{version}_linux_arm64.tar.gz"
     end
   end
 
   name "edcctl"
-  desc "Read Evolution Dance Complex schedules and app notifications"
+  desc "Read Evolution Dance Complex schedules, balances, and app notifications"
   homepage "https://github.com/jwmoss/edcctl"
 
   livecheck do

@@ -1,24 +1,24 @@
 cask "edcctl" do
-  version "0.2.0"
+  version "0.2.1"
 
   on_macos do
     on_intel do
-      sha256 "d2c37120b82fd1d4193a6dd3cba39861b8af4a61dea79b5b8caba9db515ed357"
+      sha256 "a6174d06169bac892de745944d5c08676011dd867233888382aff524bee6afda"
       url "https://github.com/jwmoss/edcctl/releases/download/v#{version}/edcctl_#{version}_darwin_amd64.tar.gz"
     end
     on_arm do
-      sha256 "4ace4e42330590e6f1927888f8b866761878e2bf8deb31c2dc2344e11efb8679"
+      sha256 "fe945cb1303b3bfaa8c6d057a1ca0953715ee9a37e3cc2f5c5087ed06aefb51b"
       url "https://github.com/jwmoss/edcctl/releases/download/v#{version}/edcctl_#{version}_darwin_arm64.tar.gz"
     end
   end
 
   on_linux do
     on_intel do
-      sha256 "48ce88cec2007ac1f3ef8f84e775fefa1cf6091da1f545e866e976cc3013d8ad"
+      sha256 "d2c58bed4383166fd650c462c8d13a72177efd265ec5b39b2ad50a05582f22f9"
       url "https://github.com/jwmoss/edcctl/releases/download/v#{version}/edcctl_#{version}_linux_amd64.tar.gz"
     end
     on_arm do
-      sha256 "cef95c4893749c6886486d9fdd1b46d65e2dcc0c97ab4fb009e54fe52903e246"
+      sha256 "2e30e49d9e1bccda3a4c64a617b482834e4a64977b9c438c7cfe5fd58dbcf24f"
       url "https://github.com/jwmoss/edcctl/releases/download/v#{version}/edcctl_#{version}_linux_arm64.tar.gz"
     end
   end

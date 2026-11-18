@@ -1,8 +1,8 @@
 class Edcctl < Formula
   desc "Read Evolution Dance Complex schedules, balances, and app notifications"
   homepage "https://github.com/jwmoss/edcctl"
-  url "https://github.com/jwmoss/edcctl/archive/refs/tags/v0.2.2.tar.gz"
-  sha256 "5e6f80af9f6946e0706d17a81f5cc9529fb6a5c0194cdd2835bbafafba109e87"
+  url "https://github.com/jwmoss/edcctl/archive/refs/tags/v0.2.3.tar.gz"
+  sha256 "4d33e72abf38f64d44f7446c1402de5d84d4646d7ec1718dd9f57c3b226e826b"
   license "MIT"
 
   depends_on "go" => :build
